@@ -8,6 +8,8 @@ import ntpath
 import os
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 def before_all(context):
     ip_adr = "172.17.0.2"
     port = 4444
@@ -17,8 +19,8 @@ def before_all(context):
     # path_to_driver = os.path.join(ntpath.dirname(__file__), os.path.join("chromedriver"))
     # s = Service(path_to_driver)   # for lin
     # context.browser = webdriver.Chrome(service=s)   # for lin
-#
-#
+
+
 def after_all(context):
     context.browser.quit()
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
