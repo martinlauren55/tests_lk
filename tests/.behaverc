@@ -1,0 +1,3 @@
+[behave]
+paths=features
+log_capture=false
