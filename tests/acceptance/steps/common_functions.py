@@ -9,11 +9,17 @@ from time import sleep
 
 @when(u'I visited page "{url}"')
 def step_impl(context, url):
-    try:
-        context.browser.get(url)
-    except:
-        assert False
-    assert True
+    # try:
+    #     context.driver.get(url)
+    # except:
+    #     assert False
+    # assert True
+    if 'http' in url:
+        actual_url = url
+    else:
+        actual_url = context.url_helper(url)
+    context.browser.get(actual_url)
+    context.url = actual_url
 
 
 @when(u'Button click by element By ID: "{elem_id}"')
