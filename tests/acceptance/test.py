@@ -1,20 +1,20 @@
-import os
-from time import sleep
-
-from selenium import webdriver
-from selenium.webdriver import DesiredCapabilities
-from selenium.common.exceptions import UnexpectedAlertPresentException
-from steps.utils.mailbox import Mailbox
-from steps.utils.form import FormFiller
-
-
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-
-import ntpath
-import os
+# import os
+# from time import sleep
+#
+# from selenium import webdriver
+# from selenium.webdriver import DesiredCapabilities
+# from selenium.common.exceptions import UnexpectedAlertPresentException
+# from steps.utils.mailbox import Mailbox
+# from steps.utils.form import FormFiller
+#
+#
+# from selenium import webdriver
+# from selenium.webdriver.chrome.service import Service
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.common.keys import Keys
+#
+# import ntpath
+# import os
 
 # def before_tag(context, tag):
 #     if tag == "browser":
@@ -47,8 +47,11 @@ import os
 
 
 # _________
+from time import sleep
 
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from time import sleep
 
 firefox_options = webdriver.ChromeOptions()
 driver = webdriver.Remote(
